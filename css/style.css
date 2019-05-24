@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.header {
+	height: 80px;
+	background: #9ab3ec;
+	border-bottom: 1px solid #e2dbd3;
+	display: block;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+}
+
+.logo {
+	line-height: 80px;
+}
+
+.main {
+	display: flex;
+	min-height: 100vh;
+	padding-top: 80px;
+	justify-content: flex-start;
+	align-content: flex-end;
+}
+
+.menu {
+	width: 10%;
+	height: 100%;
+	position: fixed;
+	top: 80px;
+	overflow-y: auto;
+	padding-bottom: 30px;
+	z-index: 99997;
+}
+
+.nav {
+	background: aqua;
+	height: 100%;
+}
+
+.menu__icon {
+	display: none;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.menu__icon path {
+	fill: red;
+}
+
+.menu__title {
+	margin-left: 10%;
+}
+
+.content {
+	width: 64.29%;
+	margin-left: 10%;
+}
+
+.image {
+	margin: 50px;
+	display: block;
+}
+
+.google-map {
+	width: 100%;
+	height: 450px;
+}
+
+.aside {
+	width: 25.71%;
+	height: 100%;
+	background: rgb(236, 64, 52);
+	position: fixed;
+	top: 80px;
+	right: 0;
+	overflow-y: auto;
+	z-index: 99997;
+	padding: 5%;
+}
+/* Screen 768px */
+
+@media screen and (max-width: 768px) {
+	.main {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.menu {
+		height: auto;
+	}
+
+	.menu__icon {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.content {
+		width: 90%;
+	}
+
+	.aside {
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+}
